@@ -14,11 +14,7 @@
 if ( ! class_exists( 'WP_Project' ) ) {
 
 	class WP_Project {
-		public $is_prod;
-
 		public function __construct() {
-			// DEFAULT ENV VARIABLES
-			$this->is_prod = strpos( $_SERVER['SERVER_NAME'], 'project.com' ) !== false ? true : false;
 			// add_action( 'some_action', array( $this, 'example_function' ) );
 		}
 

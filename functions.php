@@ -15,6 +15,7 @@ if ( ! function_exists( '_log' ) ) {
 
 // REQUIRE CLASSES
 require_once 'includes/class-project.php';
+require_once 'includes/class-project-util.php';
 
 if ( is_admin() ) {
 	require_once 'includes/class-project-admin.php';
