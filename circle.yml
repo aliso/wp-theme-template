@@ -16,7 +16,7 @@ machine:
     theme_loc: /home/ubuntu/$CIRCLE_PROJECT_REPONAME
     theme_slug: $CIRCLE_PROJECT_REPONAME
     theme_dir: /home/ubuntu/wordpress-develop/src/wp-content/themes/$theme_slug
-    theme_tests_dir: /home/ubuntu/wordpress-develop/src/wp-content/themes/$theme_slug/assets/classes/tests 
+    theme_tests_dir: /home/ubuntu/wordpress-develop/src/wp-content/themes/$theme_slug/assets/includes/tests
     js_dir: /home/ubuntu/wordpress-develop/src/wp-content/themes/$theme_slug/assets/build/js
     js_test_dir: /home/ubuntu/wordpress-develop/src/wp-content/themes/$theme_slug/assets/js/specs
 
