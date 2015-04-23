@@ -1,5 +1,6 @@
 <?php
 // Useful global constants
+define( 'GKL_PROJECT_VERSION',  '1.0.0' );
 define( 'GKL_PROJECT_ASSETS',   get_template_directory_uri() . '/assets' );
 define( 'GKL_PROJECT_INCLUDES', get_template_directory() . '/includes' );
 
