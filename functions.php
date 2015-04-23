@@ -1,4 +1,7 @@
 <?php
+// Useful global constants
+define( 'PROJECT_ASSETS',   get_template_directory_uri() . '/assets' );
+define( 'PROJECT_INCLUDES', get_template_directory() . '/includes' );
 
 // LOGGING FUNCTION
 if ( ! function_exists( '_log' ) ) {
@@ -14,11 +17,11 @@ if ( ! function_exists( '_log' ) ) {
 }
 
 // REQUIRE CLASSES
-require_once 'includes/class-project.php';
-require_once 'includes/class-project-util.php';
+require_once PROJECT_INCLUDES . '/class-project.php';
+require_once PROJECT_INCLUDES . '/class-project-util.php';
 
 if ( is_admin() ) {
-	require_once 'includes/class-project-admin.php';
+	require_once PROJECT_INCLUDES . '/class-project-admin.php';
 }
 
 // REQUIRE EXTENSIONS
