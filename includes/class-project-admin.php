@@ -10,22 +10,18 @@
  * @category  Class
  * @author    Someone
  */
+class WP_Project_Admin {
+	public function __construct() {
+		// ADD ADMIN MENU
+		// add_action( 'action_name', array( $this, 'example_function' ) );
 
-if ( ! class_exists( 'WP_Project_Admin' ) ) {
-
-	class WP_Project_Admin {
-		public function __construct() {
-			// ADD ADMIN MENU
-			// add_action( 'action_name', array( $this, 'example_function' ) );
-
-			// REQUIRE SHORTCODES, WIDGETS, EDITOR PLUGINS
-			// require_once( get_template_directory() . '/extensions/widgets/get-started.php' );
-		}
-
-		public function example_function() {
-			// Code goes here
-		}
+		// REQUIRE SHORTCODES, WIDGETS, EDITOR PLUGINS
+		// require_once( get_template_directory() . '/extensions/widgets/get-started.php' );
 	}
 
-	$project_admin = new WP_Project_Admin();
+	public function example_function() {
+		// Code goes here
+	}
 }
+
+$project_admin = new WP_Project_Admin();

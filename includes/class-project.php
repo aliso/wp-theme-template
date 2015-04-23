@@ -10,18 +10,14 @@
  * @category  Class
  * @author    Someone
  */
-
-if ( ! class_exists( 'WP_Project' ) ) {
-
-	class WP_Project {
-		public function __construct() {
-			// add_action( 'some_action', array( $this, 'example_function' ) );
-		}
-
-		public function example_function( $classes ) {
-			// Code goes here
-		}
+class WP_Project {
+	public function __construct() {
+		// add_action( 'some_action', array( $this, 'example_function' ) );
 	}
 
-	$project = new WP_Project();
+	public function example_function( $classes ) {
+		// Code goes here
+	}
 }
+
+$project = new WP_Project();
