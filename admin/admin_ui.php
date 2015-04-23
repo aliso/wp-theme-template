@@ -1,3 +1,2 @@
 <?php
-
-  // Custom admin code goes here
+// Custom admin code goes here

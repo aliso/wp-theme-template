@@ -12,31 +12,26 @@
  * @author    Someone
  */
 
-if ( !class_exists('WP_Project_Admin') ) {
+if ( ! class_exists( 'WP_Project_Admin' ) ) {
 
-  class WP_Project_Admin {
+	class WP_Project_Admin {
+		public $is_prod;
 
-    public $is_prod;
+		public function __construct() {
+			// DEFAULT ENV VARIABLES
+			$this->is_prod = strpos( $_SERVER['SERVER_NAME'], 'somedomain.com' ) !== false ? true : false;
 
-    public function __construct() {
+			// ADD ADMIN MENU
+			// add_action( 'action_name', array( $this, 'example_function' ) );
 
-      // DEFAULT ENV VARIABLES
-      $this->is_prod = strpos( $_SERVER['SERVER_NAME'], "somedomain.com" ) !== false ? true : false;
+			// REQUIRE SHORTCODES, WIDGETS, EDITOR PLUGINS
+			// require_once( get_template_directory() . '/extensions/widgets/get-started.php' );
+		}
 
-      // ADD ADMIN MENU
-      // add_action( 'action_name', array( $this, 'example_function' ) );
-      
-      // REQUIRE SHORTCODES, WIDGETS, EDITOR PLUGINS
-      // require_once( get_template_directory() . '/extensions/widgets/get-started.php' );
+		public function example_function() {
+			// Code goes here
+		}
+	}
 
-    }
-
-    public function example_function() {
-      // Code goes here
-    }
-
-  }
-
-  $project_admin = new WP_Project_Admin();
-
+	$project_admin = new WP_Project_Admin();
 }

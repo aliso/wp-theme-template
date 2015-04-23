@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Project Theme Controller
  *
@@ -12,30 +11,21 @@
  * @author    Someone
  */
 
-if ( !class_exists('WP_Project') ) {
+if ( ! class_exists( 'WP_Project' ) ) {
 
-  class WP_Project {
+	class WP_Project {
+		public $is_prod;
 
-    public $is_prod;
+		public function __construct() {
+			// DEFAULT ENV VARIABLES
+			$this->is_prod = strpos( $_SERVER['SERVER_NAME'], 'project.com' ) !== false ? true : false;
+			// add_action( 'some_action', array( $this, 'example_function' ) );
+		}
 
-    public function __construct() {
+		public function example_function( $classes ) {
+			// Code goes here
+		}
+	}
 
-      // DEFAULT ENV VARIABLES
-      $this->is_prod = strpos( $_SERVER['SERVER_NAME'], "project.com" ) !== false ? true : false;
-
-      // add_action( 'some_action', array( $this, 'example_function' ) );
-      
-    }
-
-    
-    public function example_function( $classes ) {
-
-      // Code goes here
-
-    }
-
-  }
-
-  $project = new WP_Project();
-
+	$project = new WP_Project();
 }

@@ -1,3 +1,12 @@
 <?php get_header(); ?>
 
-<?php get_footer(); ?>
+<?php
+if ( have_posts() ) {
+	while ( have_posts() ) {
+		the_post();
+		// Post content here
+	}
+}
+?>
+
+<?php get_footer();
