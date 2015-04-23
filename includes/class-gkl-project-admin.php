@@ -4,13 +4,10 @@
  *
  * Class that handles all admin theme functionality.
  *
- * @class     WP_Project_Admin
  * @version   1.0.0
- * @package   lifetouch/assets/classes
- * @category  Class
- * @author    Someone
+ * @package   gkl_project
  */
-class WP_Project_Admin {
+class GKL_Project_Admin {
 	public function __construct() {
 		// ADD ADMIN MENU
 		// add_action( 'action_name', array( $this, 'example_function' ) );
@@ -24,4 +21,4 @@ class WP_Project_Admin {
 	}
 }
 
-$project_admin = new WP_Project_Admin();
+$gkl_project_admin = new GKL_Project_Admin();

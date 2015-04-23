@@ -4,13 +4,10 @@
  *
  * Class that handles all front end theme functionality.
  *
- * @class     WP_Project
  * @version   1.0.0
- * @package   lifetouch/assets/classes
- * @category  Class
- * @author    Someone
+ * @package   gkl_project
  */
-class WP_Project {
+class GKL_Project {
 	public function __construct() {
 		// add_action( 'some_action', array( $this, 'example_function' ) );
 	}
@@ -20,4 +17,4 @@ class WP_Project {
 	}
 }
 
-$project = new WP_Project();
+$gkl_project = new GKL_Project();

@@ -1,14 +1,14 @@
 <?php
 // Useful global constants
-define( 'PROJECT_ASSETS',   get_template_directory_uri() . '/assets' );
-define( 'PROJECT_INCLUDES', get_template_directory() . '/includes' );
+define( 'GKL_PROJECT_ASSETS',   get_template_directory_uri() . '/assets' );
+define( 'GKL_PROJECT_INCLUDES', get_template_directory() . '/includes' );
 
 // REQUIRE CLASSES
-require_once PROJECT_INCLUDES . '/class-project.php';
-require_once PROJECT_INCLUDES . '/class-project-util.php';
+require_once GKL_PROJECT_INCLUDES . '/class-gkl-project.php';
+require_once GKL_PROJECT_INCLUDES . '/class-gkl-project-util.php';
 
 if ( is_admin() ) {
-	require_once PROJECT_INCLUDES . '/class-project-admin.php';
+	require_once GKL_PROJECT_INCLUDES . '/class-gkl-project-admin.php';
 }
 
 // REQUIRE EXTENSIONS
